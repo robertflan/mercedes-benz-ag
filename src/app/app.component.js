@@ -9,6 +9,14 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
         this.appTitle = 'Welcome';
+        this.appList = [{
+                "ID": "1",
+                "Name": "One"
+            },
+            {
+                "ID": "2",
+                "Name": "Two"
+            }];
     }
     return AppComponent;
 }());

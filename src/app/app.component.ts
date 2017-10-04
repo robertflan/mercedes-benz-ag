@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-   appTitle: string = 'Welcome';
+  appTitle: string = 'Welcome';
+  appList: any[] = [ {
+     "ID": "1",
+     "Name" : "One"
+  },
+
+  {
+     "ID": "2",
+     "Name" : "Two"
+  } ];
 }
