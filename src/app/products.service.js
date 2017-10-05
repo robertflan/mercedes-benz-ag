@@ -9,26 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var products_service_1 = require("./products.service");
+var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
-var AppComponent = (function () {
-    function AppComponent(_product) {
-        this._product = _product;
+require("rxjs/add/operator/do");
+var ProductService = (function () {
+    function ProductService(_http) {
+        this._http = _http;
+        this._producturl = 'app/products.json';
     }
-    AppComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._product.getproducts()
-            .subscribe(function (iproducts) { return _this.iproducts = iproducts; });
+    ProductService.prototype.getproducts = function () {
+        return this._http.get(this._producturl)
+            .map(function (response) { return response.json(); })
+            .do(function (data) { return console.log(JSON.stringify(data)); });
     };
-    return AppComponent;
+    return ProductService;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: '<div>Hello</div>',
-        providers: [products_service_1.ProductService]
-    }),
-    __metadata("design:paramtypes", [products_service_1.ProductService])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+ProductService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], ProductService);
+exports.ProductService = ProductService;
+//# sourceMappingURL=products.service.js.map
