@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
+var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/do");
+require("rxjs/add/operator/catch");
 var ProductService = (function () {
     function ProductService(_http) {
         this._http = _http;
@@ -20,7 +22,12 @@ var ProductService = (function () {
     ProductService.prototype.getproducts = function () {
         return this._http.get(this._producturl)
             .map(function (response) { return response.json(); })
-            .do(function (data) { return console.log(JSON.stringify(data)); });
+            .do(function (data) { return console.log(JSON.stringify(data)); })
+            .catch(this.handleError);
+    };
+    ProductService.prototype.handleError = function (error) {
+        console.error(error);
+        return Observable_1.Observable.throw(error.json().error());
     };
     return ProductService;
 }());
