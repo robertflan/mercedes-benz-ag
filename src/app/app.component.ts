@@ -9,11 +9,11 @@ export class AppComponent {
   appTitle: string = 'Welcome';
   appList: any[] = [ {
      "ID": "1",
-     "Name" : "One"
+     "url": 'app/images/1.png'
   },
 
   {
      "ID": "2",
-     "Name" : "Two"
+     "url": 'app/images/2.jpg'
   } ];
 }

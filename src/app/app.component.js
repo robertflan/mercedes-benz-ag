@@ -11,11 +11,11 @@ var AppComponent = (function () {
         this.appTitle = 'Welcome';
         this.appList = [{
                 "ID": "1",
-                "Name": "One"
+                "url": 'app/images/1.png'
             },
             {
                 "ID": "2",
-                "Name": "Two"
+                "url": 'app/images/2.jpg'
             }];
     }
     return AppComponent;
