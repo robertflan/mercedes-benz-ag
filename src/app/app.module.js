@@ -9,6 +9,12 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var http_1 = require("@angular/http");
+var products_component_1 = require("./products.component");
+var Inventory_component_1 = require("./Inventory.component");
+var appRoutes = [
+    { path: 'Products', component: products_component_1.Appproduct },
+    { path: 'Inventory', component: Inventory_component_1.AppInventory },
+];
 var AppModule = (function () {
     function AppModule() {
     }
