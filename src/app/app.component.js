@@ -25,12 +25,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '
-            < ul >
-        , "['/Product']":  > Product < /a></li >
-        , "['/Inventory']":  > Inventory < /a></li >
-            /ul>
-            < router - outlet > /router-outlet>'
+        template: '<div>Hello</div>',
+        providers: [products_service_1.ProductService]
     }),
     __metadata("design:paramtypes", [products_service_1.ProductService])
 ], AppComponent);
