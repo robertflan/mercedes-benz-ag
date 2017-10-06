@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
 
 @Component ({
    selector: 'my-app',
-   template: '<div>Hello</div>',
+   template: '<ul><li>product</li><li>Inventory</li></ul>',
    providers: [ProductService]
 })
 
