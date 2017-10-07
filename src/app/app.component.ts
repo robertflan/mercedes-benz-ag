@@ -8,7 +8,11 @@ import 'rxjs/add/operator/map';
 
 @Component ({
    selector: 'my-app',
-   template: '<div>Hello</div>',
+   template: ` <ul>
+   <li><a [routerLink] = "['/Product']">Product</a></li>
+   <li><a [routerLink] = "['/Inventory']">Inventory</a></li>
+</ul>
+<router-outlet></router-outlet>`
 })
 
 export   class   AppComponent  {
