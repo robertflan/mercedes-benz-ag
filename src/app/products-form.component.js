@@ -6,17 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-require("rxjs/add/operator/map");
-var AppComponent = (function () {
-    function AppComponent() {
+var products_1 = require("./products");
+var ProductFormComponent = (function () {
+    function ProductFormComponent() {
+        this.model = new products_1.Product(1, 'ProductA');
     }
-    return AppComponent;
+    return ProductFormComponent;
 }());
-AppComponent = __decorate([
+ProductFormComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<products-form></products-form>"
+        selector: 'products-form',
+        templateUrl: './products-form.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ProductFormComponent);
+exports.ProductFormComponent = ProductFormComponent;
+//# sourceMappingURL=products-form.component.js.map

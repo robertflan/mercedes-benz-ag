@@ -8,15 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-var products_component_1 = require("./products.component");
-var Inventory_component_1 = require("./Inventory.component");
-var router_1 = require("@angular/router");
-var NotFound_component_1 = require("./NotFound.component");
-var appRoutes = [
-    { path: 'Products', component: products_component_1.Appproducts },
-    { path: 'Inventory', component: Inventory_component_1.AppInventory },
-    { path: '**', component: NotFound_component_1.PageNotFoundComponent }
-];
+var forms_1 = require("@angular/forms");
+var products_form_component_1 = require("./products-form.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,9 +17,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule,
-            router_1.RouterModule.forRoot(appRoutes)],
-        declarations: [app_component_1.AppComponent, products_component_1.Appproducts, Inventory_component_1.AppInventory, NotFound_component_1.PageNotFoundComponent],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
+        declarations: [app_component_1.AppComponent, products_form_component_1.ProductFormComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
