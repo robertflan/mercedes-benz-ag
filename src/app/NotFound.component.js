@@ -6,17 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-require("rxjs/add/operator/map");
-var AppComponent = (function () {
-    function AppComponent() {
+var PageNotFoundComponent = (function () {
+    function PageNotFoundComponent() {
     }
-    return AppComponent;
+    return PageNotFoundComponent;
 }());
-AppComponent = __decorate([
+PageNotFoundComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: " <ul>\n   <li><a [routerLink] = \"['/Products']\">Product</a></li>\n   <li><a [routerLink] = \"['/Inventory']\">Inventory</a></li>\n</ul>\n<router-outlet></router-outlet>"
+        template: 'Not Found',
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], PageNotFoundComponent);
+exports.PageNotFoundComponent = PageNotFoundComponent;
+//# sourceMappingURL=NotFound.component.js.map
