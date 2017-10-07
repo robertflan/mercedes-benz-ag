@@ -12,7 +12,7 @@ var products_component_1 = require("./products.component");
 var Inventory_component_1 = require("./Inventory.component");
 var router_1 = require("@angular/router");
 var appRoutes = [
-    { path: 'Products', component: products_component_1.Appproduct },
+    { path: 'Products', component: products_component_1.Appproducts },
     { path: 'Inventory', component: Inventory_component_1.AppInventory },
 ];
 var AppModule = (function () {
@@ -24,7 +24,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
             router_1.RouterModule.forRoot(appRoutes)],
-        declarations: [app_component_1.AppComponent, products_component_1.Appproduct, Inventory_component_1.AppInventory],
+        declarations: [app_component_1.AppComponent, products_component_1.Appproducts, Inventory_component_1.AppInventory],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

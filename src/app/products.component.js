@@ -6,16 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var Appproduct = (function () {
-    function Appproduct() {
+var Appproducts = (function () {
+    function Appproducts() {
     }
-    return Appproduct;
+    return Appproducts;
 }());
-Appproduct = __decorate([
+Appproducts = __decorate([
     core_1.Component({
         selector: 'my-app',
         template: 'Products',
     })
-], Appproduct);
-exports.Appproduct = Appproduct;
+], Appproducts);
+exports.Appproducts = Appproducts;
 //# sourceMappingURL=products.component.js.map
