@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { ProductsFormComponent } from './products-form.component';
+import {Ng2PaginationModule} from 'ng2-pagination';
 
 @NgModule ({
    imports: [ BrowserModule,FormsModule],
