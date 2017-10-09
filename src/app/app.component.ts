@@ -1,14 +1,21 @@
-import { Component } from '@angular/core';
-import { Http , Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-
-
-@Component ({
-   selector: 'my-app',
-   template: `<products-form></products-form>`
-   
-})
-
-export   class   AppComponent  {
-}
+import { 
+    Component 
+ } from '@angular/core';  
+ 
+ import { 
+    appService 
+ } from './app.service';  
+ 
+ @Component({ 
+    selector: 'my-app', 
+    template: '<div>{{value}}</div>', 
+    providers: [appService]  
+ }) 
+ 
+ export class AppComponent { 
+    value: string = ""; 
+    constructor(private _appService: appService) { } 
+    ngOnInit(): void { 
+       this.value = this._appService.getApp(); 
+    }   
+ }
