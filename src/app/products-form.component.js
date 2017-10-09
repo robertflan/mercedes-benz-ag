@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var products_1 = require("./products");
-var ProductFormComponent = (function () {
-    function ProductFormComponent() {
-        this.model = new products_1.Product(1, 'ProductA');
+var ProductsFormComponent = (function () {
+    function ProductsFormComponent() {
+        this.model = new products_1.Products(1, 'ProductA');
     }
-    return ProductFormComponent;
+    return ProductsFormComponent;
 }());
-ProductFormComponent = __decorate([
+ProductsFormComponent = __decorate([
     core_1.Component({
         selector: 'products-form',
         templateUrl: './products-form.component.html'
     })
-], ProductFormComponent);
-exports.ProductFormComponent = ProductFormComponent;
+], ProductsFormComponent);
+exports.ProductsFormComponent = ProductsFormComponent;
 //# sourceMappingURL=products-form.component.js.map

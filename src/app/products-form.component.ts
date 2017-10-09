@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Product } from './products';
+import { Products } from './products';
 
 @Component ({
    selector: 'products-form',
    templateUrl: './products-form.component.html'
 })
 
-export class ProductFormComponent {
-   model = new Product(1,'ProductA');
+export class ProductsFormComponent {
+   model = new Products(1,'ProductA');
 }
