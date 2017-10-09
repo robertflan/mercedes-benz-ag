@@ -26,8 +26,7 @@ AppComponent = __decorate([
         template: '<div>{{value}}</div>',
         providers: [app_service_1.appService]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof app_service_1.appService !== "undefined" && app_service_1.appService) === "function" && _a || Object])
+    __metadata("design:paramtypes", [app_service_1.appService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
-var _a;
 //# sourceMappingURL=app.component.js.map
