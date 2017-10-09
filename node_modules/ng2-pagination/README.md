@@ -1,0 +1,8 @@
+# Pagination for Angular 2+[![Build Status](https://travis-ci.org/michaelbromley/ng2-pagination.svg?branch=master)](https://travis-ci.org/michaelbromley/ng2-pagination)
+
+## Deprecated (renamed)
+This module is deprecated and will no longer be updated, as the project was renamed.
+
+Please use [ngx-pagination](https://www.npmjs.com/package/ngx-pagination) instead, which is under active development. 
+
+See the [CHANGELOG](https://github.com/michaelbromley/ngx-pagination/blob/5d86183fd178915cac9a88c2900177709eae39b9/CHANGELOG.md#300-2017-04-14) for breaking changes that were introduced between v2.x (the last version of ng2-pagination) and v3.x (the first version of ngx-pagination).
