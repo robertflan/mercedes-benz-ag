@@ -1,15 +1,15 @@
-import {
-      Component
-   } from '@angular/core';
+import { 
+      Component 
+   } from '@angular/core';  
    
-   @Component ({
-      selector: 'my-app',
-      template: `<button (Click) = "onClickMe()"> Click Me </button> {{clickMessage}}`
-   })
+   @Component ({ 
+      selector: 'my-app', 
+      template: '<div> {{values}} </div> ' 
+   }) 
    
-   export class AppComponent {
-      clickMessage = 'Hello';
-      onClickMe() {
-         this.clickMessage = 'This tutorial!';
-      }
+   export class AppComponent { 
+      values = ''; 
+      ngOnInit() { 
+         this.values = "Hello"; 
+      } 
    }
