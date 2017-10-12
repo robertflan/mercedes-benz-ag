@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var multiplier_pipe_1 = require("./multiplier.pipe");
+var child_component_1 = require("./child.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -17,7 +18,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent, multiplier_pipe_1.MultiplierPipe],
+        declarations: [app_component_1.AppComponent, multiplier_pipe_1.MultiplierPipe, child_component_1.ChildComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

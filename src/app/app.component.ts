@@ -1,15 +1,14 @@
 import { 
       Component 
-   } from '@angular/core';  
+   } from '@angular/core'; 
+   
+   import { 
+      ChildComponent 
+   } from './child.component'; 
    
    @Component ({ 
       selector: 'my-app', 
-      template: '<div> {{values}} </div> ' 
+      template: '<child-app></child-app> ' 
    }) 
    
-   export class AppComponent { 
-      values = ''; 
-      ngOnInit() { 
-         this.values = "Hello"; 
-      } 
-   }
+   export class AppComponent { }

@@ -6,16 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var ChildComponent = (function () {
+    function ChildComponent() {
+        this.values = '';
     }
-    return AppComponent;
+    ChildComponent.prototype.ngOnInit = function () {
+        this.values = "Hello";
+    };
+    return ChildComponent;
 }());
-AppComponent = __decorate([
+ChildComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: '<child-app></child-app> '
+        selector: 'child-app',
+        template: '<div> {{values}} </div> '
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ChildComponent);
+exports.ChildComponent = ChildComponent;
+//# sourceMappingURL=child.component.js.map
