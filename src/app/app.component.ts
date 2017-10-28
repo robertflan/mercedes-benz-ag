@@ -1,14 +1,23 @@
 import { 
       Component 
-   } from '@angular/core'; 
+   } from '@angular/core';  
    
    import { 
-      ChildComponent 
-   } from './child.component'; 
+      appService 
+   } from './app.service';  
    
    @Component ({ 
-      selector: 'my-app', 
-      template: '<child-app></child-app> ' 
+      selector: 'demo-app', 
+      template: '<div>{{value}}</div>', 
+      providers: [appService] 
    }) 
    
-   export class AppComponent { }
+   export class AppComponent { 
+      value: string = ""; 
+      constructor(private _appService: appService) { }  
+   
+      ngOnInit(): void { 
+         this.value = this._appService.getApp(); 
+      } 
+   } 
+   
